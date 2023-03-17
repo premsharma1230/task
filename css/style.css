@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+  width: 100%;
+  background: #1b403a;
+}
+main .Form-wrapper {
+  width: 30%;
+  margin: 0 auto;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2.4rem 0.7rem 3rem;
+  background: #eee;
+  box-shadow: 0px 0 11px 0px rgba(0, 0, 0, 0.0509803922);
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 559px) {
+  main .Form-wrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 559px) and (max-width: 559px) {
+  main .Form-wrapper {
+    padding: 1.5rem 0.7rem 2rem;
+  }
+}
+main .Form-wrapper .container {
+  width: 90%;
+  margin: 0 auto;
+}
+main .Form-wrapper .heading {
+  text-align: center;
+}
+main .Form-wrapper .heading h2 {
+  font-size: 2.2em;
+  text-transform: capitalize;
+  color: #000;
+}
+@media screen and (max-width: 480px) {
+  main .Form-wrapper .heading h2 {
+    font-size: 1.9em;
+  }
+}
+main .Form-wrapper .heading p {
+  font-size: 1.078em;
+  text-transform: capitalize;
+  color: #999;
+  padding: 0.8rem 0 0.5rem;
+}
+main .Form-wrapper .tab-wrapper {
+  width: 100%;
+  margin: 1rem auto 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 559px) {
+  main .Form-wrapper .tab-wrapper {
+    width: 100%;
+  }
+}
+main .Form-wrapper .tab-wrapper li {
+  list-style-type: none;
+}
+main .Form-wrapper .tab-wrapper li h5 {
+  text-transform: capitalize;
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
+  font-size: 1em;
+  color: #000;
+}
+@media screen and (max-width: 480px) {
+  main .Form-wrapper .tab-wrapper li h5 {
+    font-size: 0.875em;
+  }
+}
+main .Form-wrapper .tab-wrapper li:nth-child(2) h5 {
+  font-weight: bold;
+}
+main .Form-wrapper .tab-wrapper li:first-child, main .Form-wrapper .tab-wrapper li:last-child {
+  opacity: 0.68;
+  color: #999;
+  filter: blur(0.5px);
+}
+main .Form-wrapper .tab-wrapper li span {
+  display: block;
+  margin: 0.5rem auto;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+}
+main .Form-wrapper .tab-wrapper li:nth-child(2)::before {
+  content: "";
+  width: 115px;
+  height: 1.5px;
+  background: rgba(153, 153, 153, 0.1882352941);
+  position: absolute;
+  left: 19%;
+  top: 14px;
+}
+@media screen and (max-width: 480px) {
+  main .Form-wrapper .tab-wrapper li:nth-child(2)::before {
+    width: 100px;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 376px) {
+  main .Form-wrapper .tab-wrapper li:nth-child(2)::before {
+    width: 73px;
+  }
+}
+main .Form-wrapper .tab-wrapper li:nth-child(2)::after {
+  content: "";
+  width: 115px;
+  height: 1.5px;
+  background: rgba(153, 153, 153, 0.1882352941);
+  position: absolute;
+  left: 19%;
+  top: 14px;
+  left: inherit;
+  right: 72px;
+}
+@media screen and (max-width: 480px) {
+  main .Form-wrapper .tab-wrapper li:nth-child(2)::after {
+    width: 100px;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 376px) {
+  main .Form-wrapper .tab-wrapper li:nth-child(2)::after {
+    width: 73px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .Form-wrapper .tab-wrapper li:nth-child(2)::after {
+    right: 69px;
+    left: inherit;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 376px) {
+  main .Form-wrapper .tab-wrapper li:nth-child(2)::after {
+    right: 58px;
+  }
+}
+main .Form-wrapper form {
+  width: 90%;
+  margin: 0 auto;
+}
+main .Form-wrapper form .email {
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 0.7rem 1rem;
+  border: 1.6px solid #333;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+}
+main .Form-wrapper form .email:focus {
+  border-color: rgba(51, 51, 51, 0.5647058824);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 0 2px 2px #eee;
+}
+main .Form-wrapper form .otp-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 1.5rem;
+  margin-top: 1rem;
+}
+main .Form-wrapper form .otp-box input {
+  width: 100%;
+  border-bottom: 2.3px solid #333 !important;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  caret-color: #1b403a;
+  background: transparent !important;
+}
+main .Form-wrapper form .otp-box input:focus {
+  border-bottom: 2px s2olid #000;
+  transition: all 0.3s ease-in-out;
+}
+main .Form-wrapper form .otp-box input::-webkit-outer-spin-button,
+main .Form-wrapper form .otp-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main .Form-wrapper form .otp-box input[type=number] {
+  -moz-appearance: textfield;
+}
+main .Form-wrapper form .sign {
+  color: #1b403a;
+  font-size: 1em;
+  margin: 1.3rem 0 0.5rem;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+main .Form-wrapper form .sign:hover {
+  opacity: 0.77;
+  transition: all 0.3s ease-in-out;
+}
+main .Form-wrapper form .submit {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #1b403a;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  display: block;
+  margin: 2rem 0 1rem;
+  text-transform: capitalize;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .Form-wrapper form .submit:hover {
+  opacity: 0.77;
+  transition: all 0.3s ease-in-out;
+}
+main .Form-wrapper form .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  grid-gap: 0 0.5rem;
+  margin: 2em 0 0;
+}
+main .Form-wrapper form .form-footer h3 {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  color: #444;
+  font-weight: normal;
+}
+main .Form-wrapper form .form-footer button {
+  color: #999;
+  opacity: 0.88;
+  font-weight: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+main .Form-wrapper form .form-footer button:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  color: #444;
+}/*# sourceMappingURL=style.css.map */
